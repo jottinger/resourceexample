@@ -38,7 +38,7 @@ public class TestResources {
     public void readProperty() throws IOException {
         InputStream is = this.getClass().getResourceAsStream("/configexample.properties");
         assertNotNull(is);
-Properties properties=new Properties();
+        Properties properties = new Properties();
         properties.load(is);
         assertEquals(properties.getProperty("foo"), "bar");
         assertEquals(properties.getProperty("baz"), "bletch");
